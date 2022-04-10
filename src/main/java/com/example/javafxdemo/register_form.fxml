@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/2" xmlns:fx="http://javafx.com/fxml/2"
+      fx:controller="com.example.javafxdemo.HelloController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="202.0" prefWidth="423.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="187.0" text="You want to sign?" textAlignment="CENTER" />
+            <Label text="Create Login" />
+            <TextField fx:id="userLog" alignment="CENTER" prefHeight="26.0" prefWidth="333.0" style="-fx-background-radius: 10;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <Label text="Create Password" />
+            <TextField fx:id="userPass" style="-fx-background-radius: 10;" />
+            <Button fx:id="Create" mnemonicParsing="false" onAction="#creation" text="Create!" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

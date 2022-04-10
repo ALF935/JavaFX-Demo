@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="279.0" prefWidth="290.0" spacing="20.0" style="-fx-background-radius: 20px;"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafxdemo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label fx:id="userText" />
+   <TextField fx:id="login" alignment="TOP_CENTER" prefHeight="26.0" prefWidth="289.0" promptText="Enter your Login" style="-fx-background-radius: 10;" />
+   <PasswordField fx:id="password" alignment="TOP_CENTER" promptText="Enter your Password" style="-fx-background-radius: 10;" />
+    <Button fx:id="SignIn" onAction="#signingIn" prefHeight="26.0" prefWidth="62.0" text="Sign in!" textAlignment="CENTER">
+      <font>
+         <Font name="Arial Unicode MS" size="12.0" />
+      </font></Button>
+   <Button fx:id="SignUp" mnemonicParsing="false" onAction="#signingUp" text="Sign Up!" />
+</VBox>
